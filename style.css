@@ -1,0 +1,427 @@
+/* global rules */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* start header */
+.header{
+    background:url(imgs/header.jpg) no-repeat top center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgb(62 203 246 / 50%);
+}
+
+.header .overlay h1{
+    font-size: 60px;
+    margin-top: 100px;
+    color:rgb(236, 231, 234);
+}
+
+.header .overlay .plan{
+    border: 2px solid #fff;
+    font-size: 24px;
+    width: 48%;
+    float: left;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.header .overlay .order{
+    border: 2px solid #fff;
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 30px;
+}
+@media (max-width:767px){
+.header .overlay .plan{
+    float: none;
+    margin: 0 auto 20px ;
+    font-size: 22px;
+}
+}
+
+@media (max-width:420px){
+    h1{
+        margin-top: 20px !important;
+    }
+    .header .overlay .plan{
+        float: none;
+        margin: 0 auto 20px ;
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
+@media (max-width:250px){
+    .header .overlay .order{
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .h1{
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width:260px){
+    .header .overlay .order{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .header .overlay .plan{
+        padding: 7px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 20px !important;
+    }
+}
+/* end header */
+
+/* Start Features */
+.features{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #eee;
+}
+.features .h1{
+    padding-top: 30px !important;
+}
+.feat{
+    margin:20px;
+}
+
+.feat h2{
+    margin-bottom: 10px;
+    font-size: 20px !important;
+}
+.feat p{
+    font-size: 17px !important;
+}
+.features .container{
+    padding-bottom: 10px;
+}
+/* End Features */
+
+/* start our works */
+.our-works .h1{
+    margin: 30px;
+}
+.our-works .image{
+    float: left;
+}
+/* end our works */
+
+/* Start about us */
+.about-us {
+    background-color: #848383;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-us .container{
+    margin-bottom: 10px !important;
+}
+.about-us h2{
+    padding: 20px;
+    color:#fff;
+}
+.about-us p{
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+/* end about us */
+
+/* start pricing table */
+.pricing-table{
+    margin-top: 40px;
+    background-color: #767676;
+    color: #eee;
+    padding:50px 0 ;
+}
+
+.pricing-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vmin;
+    padding: 0.5vmin 0;
+}
+
+.pricing-plan{
+    border: 2px solid #fff;
+    padding: 1.7vmin 6vmin;
+}
+
+.pricing-plan h3{
+    color: black;
+    margin-bottom: 0.4vmin !important;
+    font-size: 4vmin !important;
+}
+
+.pricing-box li{
+    margin: 0.9vmin;
+    font-size: 3vmin;
+    color: black;
+}
+.pricing{
+    font-size: 4.5vmin;
+    text-align: center;
+    color: #a82f2f
+}
+
+@media (max-width:800px){
+    .pricing-box{
+        flex-direction: column; 
+    }
+}
+@media (max-width:290px){
+    .pricing-box li{
+        font-size: 12px !important;
+    }
+    .pricing-plan h3{
+        font-size:18px !important ;
+    }
+    .pricing-plan .pricing{
+        font-size: 16px !important;
+    }
+}
+
+/* end pricing table */
+
+/* Start What they say */
+.they-say .h1{
+    margin: 15px;
+    color: #9f9c9c;
+}
+.person-say{
+border :1px solid rgb(200, 200, 200);
+border-radius:6px ;
+padding: 20px;
+background-color: #eee;
+margin-bottom: 5px;
+}
+.person-say:not(.saad){
+width: 48%;
+float: left;
+margin: 2px;
+}
+.saad{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 4px;
+}
+
+@media (max-width:344px){
+    .person-say{
+    width: 100% !important;
+    }
+}
+
+@media (max-width:180px){
+    .person-say{
+    font-size:14px !important ;
+    }
+}
+
+/* end What they say */
+/* start product info */
+.product-info{
+    background-color: #d2d1d1;
+}
+.product-info h3{
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.cat{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.cat li{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #8d8d8d;
+    padding: 10px;
+    cursor: pointer;
+}
+.product-info .container div{
+    background-color: #fff;
+    padding: 10px;
+    line-height: 30px;
+}
+.product-info .container{
+    padding-bottom:80px ;
+}
+.selected, .se{
+    color: rgb(36, 200, 250);
+    background-color: #fff !important;
+}
+.product-info .container div:not(.selectabout){
+    display: none;
+}
+
+@media (max-width:472px){
+    .cat{
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media (max-width:165px){
+    .cat li{
+        font-size: 14px;
+    }
+    .main{
+        line-height: 20px !important;
+    }
+}
+
+/* End product info */
+
+.footer {
+    background-color:rgb(63, 63, 63) ;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:500px){
+    .footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    }
+/* mobile and tablet */
+@media (max-width:767px){
+.responsive-p{
+    text-align: center;
+    font-size: 15px !important;
+}
+}
+
+@media (max-width:644px) and (min-width:251px){
+    .header .overlay h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .header .overlay .plan{
+        float: none;
+        margin: 0 auto 10px ;
+        font-size: 14px;
+    }
+    .h1{
+        font-size: 30px !important;
+    }
+}
+@media (max-width:768px) and (min-width:523px){
+    .our-works .image{
+        width: 100%;
+    }
+}
+
+/* small screen  */
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+    .features .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .feat h2{
+        font-size:25px;
+    }
+    .feat p{
+        font-size: 20px;
+    }
+    .our-works .image{
+        width: 50%;
+    }
+}
+
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+    .our-works .image{
+        width: 33.333333%;
+    }
+}
+
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+    .our-works .image{
+        width: 25%;
+    }
+}
+/* Start  My framework */
+.text-center{
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+.responsive-p{
+    line-height: 1.5;
+}
+
+.responsive-img{
+    width: 100%;
+}
+
+.float-left{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+.list-none{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+
+.float-left{
+    float: left;
+}
+/* end My framework */
